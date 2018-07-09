@@ -21,6 +21,7 @@ PRODUCT_SHIPPING_API_LEVEL := 25
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-ros
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
