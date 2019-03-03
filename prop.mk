@@ -46,8 +46,10 @@ vendor.voice.voip.conc.disabled=true
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
+persist.vendor.bt.enable.splita2dp=false \
+ro.bluetooth.hfp.ver=1.7 \
+ro.vendor.qualcomm.bt.hci_transport=smd
 vendor.qcom.bluetooth.soc=smd \
-ro.bluetooth.hfp.ver=1.7
 
 # CAF props
 PRODUCT_PROPERTY_OVERRIDES += \
