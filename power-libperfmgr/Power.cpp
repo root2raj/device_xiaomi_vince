@@ -231,11 +231,13 @@ Return<void> Power::powerHintAsync_1_2(PowerHint_1_2 hint, int32_t data) {
 
     switch (hint) {
         case PowerHint_1_2::AUDIO_LOW_LATENCY:
+        if (!mSustainedPerfModeOn) {
             if (data) {
                 // Hint until canceled
                 mHintManager->DoHint("AUDIO_LOW_LATENCY");
             } else {
                 mHintManager->EndHint("AUDIO_LOW_LATENCY");
+	       }
             }
             break;
         case PowerHint_1_2::AUDIO_STREAMING:
