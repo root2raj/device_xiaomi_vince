@@ -30,6 +30,9 @@
 # Remove settings cache, avoids derps after dirty flash
 rm -rf /data/system/package_cache
 
+# Remove recovery cache from persist
+rm -rf /mnt/vendor/persist/cache/recovery
+
 #
 # Make modem config folder and copy firmware config to that folder for RIL
 #
