@@ -399,3 +399,6 @@ on property:dev.bootcomplete=1
     # FPS Info
     chown system graphics /sys/class/graphics/fb0/measured_fps
     chmod 0666 /sys/class/graphics/fb0/measured_fps
+
+on property:apexd.status=ready
+    symlink /system/lib64/libashmemd_client.so /system/apex/com.android.media.swcodec/lib64/libashmemd_client.so
