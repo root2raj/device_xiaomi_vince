@@ -47,6 +47,7 @@ vendor.voice.voip.conc.disabled=true
 PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
 persist.vendor.bt.enable.splita2dp=false \
+persist.vendor.service.bdroid.sibs=false \
 ro.bluetooth.hfp.ver=1.7 \
 ro.vendor.qualcomm.bt.hci_transport=smd
 vendor.qcom.bluetooth.soc=smd \
