@@ -654,4 +654,7 @@
         manager will disable alpha trasformation in animations where not
         strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
+
+    <!-- Whether camera shutter sound is forced or not  (country specific). -->
+    <bool name="config_camera_sound_forced">false</bool>
 </resources>
