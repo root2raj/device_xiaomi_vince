@@ -128,6 +128,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.fm.transmitter=false \
 vendor.hw.fm.init=0
 
+# Framework boost
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.at_library=true \
+vendor.enable.prefetch=false \
+vendor.iop.enable_prefetch_ofr=false \
+vendor.iop.enable_uxe=1 \
+vendor.perf.gestureflingboost.enable=true \
+vendor.perf.iop_v3.enable.debug=false \
+vendor.perf.iop_v3.enable=true \
+vendor.perf.workloadclassifier.enable=true
+
 # Frp
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
