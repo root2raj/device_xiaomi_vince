@@ -380,3 +380,7 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
 
 on property:dev.bootcomplete=1
     restart ril-daemon
+
+    # FPS Info
+    chown system graphics /sys/class/graphics/fb0/measured_fps
+    chmod 0666 /sys/class/graphics/fb0/measured_fps
