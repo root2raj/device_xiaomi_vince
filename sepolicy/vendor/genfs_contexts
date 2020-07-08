@@ -9,10 +9,14 @@ genfscon sysfs /devices/platform/soc/78b6000.i2c/i2c-2/2-0045/leds/ u:object_r:s
 
 # Power HAL
 genfscon debugfs /mnh_sm                              u:object_r:debugfs_easel:s0
-genfscon debugfs /rpm_stats                           u:object_r:debugfs_rpm:s0
 genfscon debugfs /rpm_master_stats                    u:object_r:debugfs_rpm:s0
+genfscon debugfs /rpm_stats                           u:object_r:debugfs_rpm:s0
 genfscon debugfs /system_stats                        u:object_r:debugfs_rpm:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,cpubw                      u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,cpubw                      u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,memlat-cpu0                u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,memlat-cpu4                u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,mincpubw                   u:object_r:sysfs_devfreq:s0
 
 # Rmt
 genfscon debugfs /rmt_storage	u:object_r:debugfs_rmt:s0
