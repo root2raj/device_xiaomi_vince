@@ -599,4 +599,7 @@
 
     <!-- Whether to intercept inputs on screen off. -->
     <bool name="config_enableKeyHandler">true</bool>
+
+    <!-- We don't not have a multicolored LED -->
+    <bool name="config_multiColorBatteryLed">false</bool>
 </resources>
