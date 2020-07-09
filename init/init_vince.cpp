@@ -36,9 +36,9 @@
 char const *heapstartsize;
 char const *heapgrowthlimit;
 char const *heapsize;
-char const *heaptargetutilization;
 char const *heapminfree;
 char const *heapmaxfree;
+char const *heaptargetutilization;
 
 using android::init::property_set;
 
@@ -49,20 +49,20 @@ void check_device()
     sysinfo(&sys);
 
     if (sys.totalram > 3072ull * 1024 * 1024) {
-        // from - xxhdpi-4096-dalvik-heap.mk
-        heapstartsize = "16m";
+        // from - phone-xxhdpi-4096-dalvik-heap.mk
+        heapstartsize = "8m";
         heapgrowthlimit = "256m";
         heapsize = "512m";
-        heaptargetutilization = "0.75";
-        heapminfree = "4m";
-        heapmaxfree = "8m";
+        heaptargetutilization = "0.6";
+        heapminfree = "8m";
+        heapmaxfree = "16m";
     } else {
-        // from - xxhdpi-3072-dalvik-heap.mk
+        // from - phone-xhdpi-2048-dalvik-heap.mk
         heapstartsize = "8m";
-        heapgrowthlimit= "288m";
-        heapsize = "768m";
+        heapgrowthlimit = "192m";
+        heapsize = "512m";
         heaptargetutilization = "0.75";
-        heapminfree = "2m";
+        heapminfree = "512k";
         heapmaxfree = "8m";
    }
 }
