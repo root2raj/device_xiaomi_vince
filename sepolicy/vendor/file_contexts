@@ -25,10 +25,13 @@
 /sys/devices/virtual/graphics/fb0/measured_fps                              u:object_r:sysfs_fps:s0
 
 # Ir
-/dev/lirc[0-9]*					u:object_r:lirc_device:s0
+/dev/peel_ir					u:object_r:lirc_device:s0
 
 # Legacy root dirs
 /firmware(/.*)?                                 u:object_r:firmware_file:s0
+
+# Power HAL
+/sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-0020/input/input[0-9]+/wake_gesture     u:object_r:sysfs_tap_to_wake:s0
 
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril.db			u:object_r:rild_file:s0
