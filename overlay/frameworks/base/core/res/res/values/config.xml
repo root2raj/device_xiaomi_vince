@@ -290,6 +290,9 @@
          capability can provide power savings when wifi needs to be always kept on. -->
     <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
 
+    <!-- Configuration to enable non-default PDP during IWLAN -->
+    <bool name="config_feature_iwlan_enabled">true</bool>
+
     <!-- IWLAN -->
     <string name="config_wlan_data_service_package" translatable="false">vendor.qti.iwlan</string>
     <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
