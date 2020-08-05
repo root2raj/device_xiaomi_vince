@@ -86,6 +86,12 @@ vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|b6e5d67869138d102595dd0356
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|e9cffc642dc8f15492ca316c276e02c7e146b90d
 vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|fe0c94096ad70472271c0093ce6be226f74e40f4
 
+# Bluetooth (aptX) - from coral-user-10-QQ3A.200805.001-6578210-release-keys
+product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|e25f1087edc95d2ff76c1e37787ca37aae2cf175
+
 # Bluetooth (shared dependencies) - from LA.UM.8.6.2.r1-06600-89xx.0
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|9c1b952043c7722fd27bfd971ecebb2584671862
 
