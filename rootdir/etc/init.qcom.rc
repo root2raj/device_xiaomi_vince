@@ -320,6 +320,9 @@ service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     disabled
     oneshot
 
+on property:init.svc.surfaceflinger=restarting
+    restart vendor.hwcomposer-2-3
+
 on property:sys.boot_completed=1
     start qcom-post-boot
 

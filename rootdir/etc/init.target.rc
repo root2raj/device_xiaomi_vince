@@ -135,13 +135,13 @@ service wcnss-service /vendor/bin/wcnss_service
     group system wifi radio
     oneshot
 
-on property:init.svc.surfaceflinger=stopped
+on property:init.svc.hwcomposer-2-3=stopped
     stop ppd
 
-on property:init.svc.surfaceflinger=running
+on property:init.svc.hwcomposer-2-3=running
     start ppd
 
-on property:init.svc.surfaceflinger=restarting
+on property:init.svc.hwcomposer-2-3=restarting
     stop ppd
 
 on property:init.svc.zygote=stopped
