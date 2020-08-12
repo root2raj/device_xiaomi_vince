@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 # Inherit some common ResurrectionRemix stuff.
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORT := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
 PRODUCT_NAME := rr_vince
