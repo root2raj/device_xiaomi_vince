@@ -1,0 +1,1 @@
+allow theme_prop theme_prop:file { read };

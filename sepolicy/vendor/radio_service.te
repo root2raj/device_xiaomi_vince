@@ -1,0 +1,1 @@
+allow radio_service radio_service:service_manager { find };
