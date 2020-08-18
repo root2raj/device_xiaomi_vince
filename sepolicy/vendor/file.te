@@ -10,6 +10,11 @@ type gx_fpd_data_file, file_type, data_file_type, core_data_file_type;
 # FPS Info
 type sysfs_fps, sysfs_type, fs_type;
 
+# Power HAL
+type debugfs_rpm, debugfs_type, fs_type;
+type sysfs_rpm, sysfs_type, fs_type;
+type debugfs_easel, debugfs_type, fs_type;
+
 # Rild
 type rild_file, file_type, vendor_file_type;
 
