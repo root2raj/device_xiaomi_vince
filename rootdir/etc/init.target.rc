@@ -215,6 +215,21 @@ service ppd /vendor/bin/mm-pp-dpps
     socket pps stream 0660 system system
     disabled
 
+on property:vendor.post_boot.parsed=1
+    # Setup permission for Power HAL
+    chown system system /sys/class/devfreq/soc:qcom,cpubw/min_freq
+    chown system system /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
+    chown system system /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
+    chown system system /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_length
+    
+    chown 0664 /sys/class/devfreq/soc:qcom,cpubw/min_freq
+    chown 0664 /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
+    chown 0664 /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
+    chown 0664 /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_length
+    
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
 on boot
     # add for goodix 
     chown system system /dev/goodix_fp
