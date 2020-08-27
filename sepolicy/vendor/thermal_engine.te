@@ -1,2 +1,4 @@
 # Allow thermal-engine to read files in /sys
 r_dir_file(thermal-engine, sysfs)
+
+allow thermal-engine app_data_file:file { read };
