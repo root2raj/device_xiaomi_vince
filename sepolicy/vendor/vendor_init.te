@@ -1,2 +1,0 @@
-# Power HAL
-set_prop(vendor_init, power_prop)
