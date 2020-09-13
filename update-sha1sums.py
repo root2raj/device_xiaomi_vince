@@ -20,8 +20,8 @@ import os
 import sys
 from hashlib import sha1
 
-device='vince'
-vendor='xiaomi'
+device = 'vince'
+vendor = 'xiaomi'
 
 with open('proprietary-files.txt', 'r') as f:
     lines = f.read().splitlines()

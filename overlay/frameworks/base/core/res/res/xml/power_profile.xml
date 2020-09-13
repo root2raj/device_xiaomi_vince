@@ -29,7 +29,7 @@
 -->
 
 <device name="Android">
-<item name="screen.on">75
+    <item name="screen.on">75
     </item>
     <item name="screen.full">255
     </item>
@@ -140,5 +140,5 @@
         </value>
         <value>6
         </value>
-    </array> 
+    </array>
 </device>
