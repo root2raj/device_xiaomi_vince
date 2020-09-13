@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (c) 2015, The Linux Foundation. All rights reserved.
 
      Not a Contribution.
@@ -69,7 +69,7 @@
         <MediaCodec name="OMX.google.mpeg4.encoder" type="video/mp4v-es" update="true">
             <Limit name="measured-frame-rate-176x144" range="385-385" />
         </MediaCodec>
-       <MediaCodec name="c2.android.mpeg4.encoder" type="video/mp4v-es" update="true">
+        <MediaCodec name="c2.android.mpeg4.encoder" type="video/mp4v-es" update="true">
             <Limit name="measured-frame-rate-176x144" range="510-540" />
         </MediaCodec>
         <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true">
@@ -160,8 +160,8 @@
             <Limit name="measured-frame-rate-352x288" range="170-182" />
         </MediaCodec>
         <MediaCodec name="c2.android.h263.decoder" type="video/3gpp" update="true">
-             <Limit name="measured-frame-rate-176x144" range="182-440" />
-             <Limit name="measured-frame-rate-352x288" range="158-320" />
+            <Limit name="measured-frame-rate-176x144" range="182-440" />
+            <Limit name="measured-frame-rate-352x288" range="158-320" />
         </MediaCodec>
         <MediaCodec name="OMX.google.vp8.decoder" type="video/x-vnd.on2.vp8" update="true">
             <Limit name="measured-frame-rate-320x240" range="575-580" />
@@ -191,7 +191,7 @@
             <Type name="video/mp4v-es">
                 <Limit name="measured-frame-rate-176x144" range="200-200" />
             </Type>
-         </MediaCodec>
+        </MediaCodec>
         <MediaCodec name="c2.android.mpeg4.decoder" update="true">
             <Type name="video/mp4v-es">
                 <Limit name="measured-frame-rate-176x144" range="165-440" />
@@ -199,4 +199,3 @@
         </MediaCodec>
     </Decoders>
 </MediaCodecs>
-
