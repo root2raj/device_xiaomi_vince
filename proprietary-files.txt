@@ -993,13 +993,6 @@ vendor/lib/libqti-util.so|5baec080c5c5c26778d2242bfc0e570ca92b7724
 vendor/lib/vendor.qti.hardware.perf@1.0.so|b4969fa797d1957ad8f35d4f84615608f0e9cc2e
 vendor/lib/vendor.qti.hardware.perf@2.0.so|71592601eed5e022f4979293d68deb98e688a3d4
 
-# Perf (configs) - from LA.UM.8.6.r1-04400-89xx.0
-vendor/etc/perf/commonresourceconfigs.xml|89d443b2b67d58fff1ef34c33e3f1c393164cf5d
-vendor/etc/perf/perfboostsconfig.xml|051a7e61d941a46441e7bfc90208bc671a47bb33
-vendor/etc/perf/perfconfigstore.xml|dfa3a78fd24cba4b870a3cd04d657cc9962c8331
-vendor/etc/perf/targetconfig.xml|aa20c25397df1455206965737f82d44d44430e45
-vendor/etc/perf/targetresourceconfigs.xml|d9f9815764725df55e748bf4af4829e609dac853
-
 # Peripheral manager - from LA.UM.8.6.r1-04400-89xx.0
 vendor/bin/pm-proxy|2ac2d0e897ccb4c9a96b6a4cd3d66c2ef66c5b61
 vendor/bin/pm-service|68a46996bcb9014ebc948990fd943c40206dd8f2
