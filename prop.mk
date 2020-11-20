@@ -88,7 +88,7 @@ persist.debug.coresight.config=stm-events
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.cpurend.vsync=false \
-debug.egl.hw=0 \
+debug.egl.hw=1 \
 debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
@@ -96,7 +96,7 @@ debug.sdm.support_writeback=0 \
 debug.sf.disable_backpressure=1 \
 debug.sf.enable_gl_backpressure=1 \
 debug.sf.enable_hwc_vds=1 \
-debug.sf.hw=0 \
+debug.sf.hw=1 \
 debug.sf.latch_unsignaled=1 \
 debug.sf.recomputecrop=0 \
 dev.pm.dyn_samplingrate=1 \
@@ -248,3 +248,55 @@ persist.sys.wfd.virtual=0
 # Enable QC2 bufferqueue block-pool
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.qc2.use.bqpool=1
+
+# Hwui Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.hwui.texture_cache_size=72
+ro.hwui.layer_cache_size=48
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.path_cache_size=32
+ro.hwui.gradient_cache_size=1
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_small_cache_height=1024
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_large_cache_height=1024
+
+# Enable B service adj transition by default
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.qti.sys.fw.bservice_enable=true
+ro.vendor.qti.sys.fw.bservice_limit=5
+ro.vendor.qti.sys.fw.bservice_age=5000
+
+#Trim properties
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.qti.sys.fw.use_trim_settings=true
+ro.vendor.qti.sys.fw.empty_app_percent=50
+ro.vendor.qti.sys.fw.trim_empty_percent=100
+ro.vendor.qti.sys.fw.trim_cache_percent=100
+ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
+
+#Other
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.qti.config.swap=0 \
+ro.vendor.qti.core_ctl_min_cpu=2 \
+ro.vendor.qti.core_ctl_max_cpu=4 \
+persist.vendor.max.brightness=409 \
+ro.vendor.extension_library=libqti-perfd-client.so \
+setupwizard.feature.baseline_setupwizard_enabled=true \
+ro.hardware.vulkan=adreno \
+ro.hardware.egl=adreno \
+ro.opa.eligible_device=true \
+ro.control_privapp_permissions=enforce \
+vendor.power.pasr.enabled=true \
+persist.vendor.qcomsysd.enabled=1 \
+persist.sys.camera.camera2=true \
+persist.vendor.camera.stats.test=5 \
+persist.vendor.radio.enable_temp_dds=true \
+persist.console.silent.config=1 \
+ro.vendor.qti.sys.fw.bservice_enable=true \
+ro.treble.enabled=true \
+ro.sf.compbypass.enable=0 \
+debug.hwui.renderer=skiavk
+
