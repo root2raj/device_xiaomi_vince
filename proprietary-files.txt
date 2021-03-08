@@ -739,10 +739,11 @@ vendor/lib64/libsecureui.so|4e496259eb6da9b3dcf6fb744da897422350b6c7
 vendor/lib64/libsecureui_svcsock.so|060bbd76ead3b3aeb323af0c7352f9445088d3fe
 vendor/lib64/libssd.so|33d717f793c2579e3bd17b5ce6534cb68c12887d
 
-# DRM - Widevine - LA.UM.8.6.r1-04000-89xx.0
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine|b626d9bbf7043c66c8ef903c9d0e5183fc47388d
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|75335443a33a06a03eecfa714dfe9f1c0c4df2b1
-vendor/lib64/libwvhidl.so|4af61fdcf1186700ea7ee23c607fb9ce5fd0f0e8
+# DRM - Widevine - from Lmi 11/RKQ1.200826.002/V12.2.4.0.RJKMIXM
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|2230b35e2d067ba92496cae131b00fd1bbc812c2
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|6b00f42dc85becc58f303bc4588331239c5c83aa
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ea7038bdc341cddc3f7803367e47c91c2ee6672f
+vendor/lib64/libwvhidl.so|07a8861d3aa01ba535b7a1af808e012ba1dbe229
 
 # Fingerprint (HIDL) - from vince
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|fc513e8527eb2a5459c3fedba46dbf11cec6d76b
