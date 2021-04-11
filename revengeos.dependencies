@@ -1,0 +1,29 @@
+[
+  {
+    "remote": "devices",
+    "repository"  : "vendor_xiaomi_vince",
+    "target_path" : "vendor/xiaomi/vince"
+  },
+  {
+    "remote": "gitlab",
+    "repository"  : "starlight5234/kernel_xiaomi_vince",
+    "target_path" : "kernel/xiaomi/vince",
+    "branch": "staging"
+  },
+  {
+    "remote": "gitlab",
+    "repository"  : "starlight5234/hardware_qcom_audio",
+    "target_path" : "hardware/qcom-caf/msm8996/audio"
+  },
+  {
+    "remote": "gitlab",
+    "repository"  : "starlight5234/android-hardware-qcom-wlan",
+    "target_path" : "hardware/qcom-caf/wlan"
+  },
+  {
+    "remote": "github",
+    "repository"  : "Wave-Project/vendor_codeaurora_telephony",
+    "target_path" : "vendor/codeaurora/telephony",
+    "branch" : "r"
+  }
+]
