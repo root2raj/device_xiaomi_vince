@@ -13,17 +13,16 @@
   {
     "remote": "gitlab",
     "repository"  : "starlight5234/hardware_qcom_audio",
-    "target_path" : "hardware/qcom-caf/msm8996/audio"
+    "target_path" : "hardware/qcom-caf/msm8996-vince/audio"
   },
   {
     "remote": "gitlab",
-    "repository"  : "starlight5234/android-hardware-qcom-wlan",
-    "target_path" : "hardware/qcom-caf/wlan"
+    "repository"  : "starlight5234/hardware_qcom_display",
+    "target_path" : "hardware/qcom-caf/msm8996-vince/display"
   },
   {
-    "remote": "github",
-    "repository"  : "Wave-Project/vendor_codeaurora_telephony",
-    "target_path" : "vendor/codeaurora/telephony",
-    "branch" : "r"
+    "remote": "gitlab",
+    "repository"  : "starlight5234/hardware_qcom_media",
+    "target_path" : "hardware/qcom-caf/msm8996-vince/media"
   }
 ]

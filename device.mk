@@ -34,6 +34,9 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
+# Board
+OVERRIDE_QCOM_HARDWARE_VARIANT := msm8996-vince
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
