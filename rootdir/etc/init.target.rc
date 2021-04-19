@@ -234,3 +234,12 @@ service goodix_script /vendor/bin/init.goodix.sh
     class late_start
     user system
     oneshot
+
+# Smart Charging
+#Huaqin add for control charge by zhangjingzhi at 20180129 start
+on boot 
+chown system system /sys/class/power_supply/battery/charging_enabled 
+chmod 0666 /sys/class/power_supply/battery/charging_enabled 
+chown system system /sys/class/power_supply/battery/input_suspend 
+chmod 0666 /sys/class/power_supply/battery/input_suspend
+#Huaqin add for control charge by zhangjingzhi at 20180129 end
