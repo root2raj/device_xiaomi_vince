@@ -614,4 +614,7 @@
 
     <!-- We don't not have a multicolored LED -->
     <bool name="config_multiColorBatteryLed">false</bool>
+
+    <!-- Smart charging -->
+    <bool name="config_smartChargingAvailable">true</bool>
 </resources>
